@@ -56,7 +56,6 @@ public class GeradorPDF implements GeradorEbook {
             }
 
             // Adiciona uma página com o texto "teste" ao final do documento
-            //pdfDocument.add(new AreaBreak(AreaBreakType.NEXT_PAGE));
             pdfDocument.add(new Paragraph("teste"));
 
             LOGGER.info("Arquivo PDF gerado com sucesso: " + arquivoDeSaida.toAbsolutePath());
